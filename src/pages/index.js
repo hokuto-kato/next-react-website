@@ -1,14 +1,15 @@
-export default function Home(){
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+import { Hero } from '@/components/hero'
+
+export default function Home () {
   return (
     <>
-      <header>HEADER</header>
+      <Header/>
       <main>
-        <div>
-          <h1>CUBE</h1>
-          <p>アウトプットしていくサイト</p>
-        </div>
+        <Hero/>
       </main>
-      <footer>FOOTER</footer>
+      <Footer/>
     </>
   )
 }
