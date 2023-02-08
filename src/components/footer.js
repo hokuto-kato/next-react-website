@@ -1,5 +1,10 @@
-export const Footer = () =>{
+import Logo from '@/components/logo'
+
+export const Footer = () => {
   return (
-    <footer>FOOTER</footer>
+    <footer>
+      <p>Footer</p>
+      <Logo/>
+    </footer>
   )
 }
