@@ -1,10 +1,14 @@
-import '@/styles/globals.scss'
 import { Layout } from '@/components/layout'
+import { Global } from '@emotion/react'
+import { style } from '@/styles/global'
 
-export default function App ({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Layout>
+        <Global styles={style} />
+        <Component {...pageProps} />
+      </Layout>
+    </>
   )
 }
