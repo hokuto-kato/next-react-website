@@ -1,7 +1,10 @@
 import { Hero } from '@/components/hero'
+import { Container } from '@/components/container'
 
-export default function blog () {
+export default function blog() {
   return (
-    <Hero title="Blog" subtitle="Recent Posts"/>
+    <Container>
+      <Hero title="Blog" subtitle="Recent Posts" />
+    </Container>
   )
 }

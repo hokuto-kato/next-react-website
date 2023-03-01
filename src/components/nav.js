@@ -1,9 +1,10 @@
+import styles from '@/styles/nav.module.sass'
 import Link from 'next/link'
 
-export default function Nav () {
+export const Nav = () => {
   return (
     <nav>
-      <ul>
+      <ul className={styles.list}>
         <li>
           <Link href="/">Home</Link>
         </li>

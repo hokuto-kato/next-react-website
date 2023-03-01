@@ -1,24 +1,12 @@
-import { css } from '@emotion/react'
-
+import styles from '@/styles/hero.module.sass'
 export const Hero = ({ title, subtitle, imageOn = false }) => {
   return (
-    <div css={text}>
-      <h1 css={heading}>{title}</h1>
-      <p css={subHeading}>{subtitle}</p>
+    <div className={styles.flexContainer}>
+      <div className={styles.text}>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.subtitle}>{subtitle}</p>
+      </div>
       {imageOn && <figure>[画像]</figure>}
     </div>
   )
 }
-
-const text = css`
-	padding-top: calc(var(--display) * 0.5);
-	padding-bottom: calc(var(--display) * 0.7);
-`
-const heading = css`
-	font-size: var(--display);
-	font-weight: 900;
-	letter-spacing: 0.15em;
-`
-const subHeading = css`
-	font-size: var(--small-heading2);
-`
