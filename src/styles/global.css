@@ -1,3 +1,4 @@
+/* 変数設定 */
 :root {
   --white: #ffffff;
   --gray-10: #eeeeee;
@@ -21,6 +22,7 @@
   --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
 }
 
+/* 基本設定 */
 body {
   color: var(--black);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
@@ -40,10 +42,12 @@ h3 {
   font-size: var(--heading3);
 }
 
+/* next/image */
 span > img {
   transition: 0.2s;
 }
 
+/* リセット */
 body,
 h1,
 h2,
