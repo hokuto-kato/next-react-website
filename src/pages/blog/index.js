@@ -1,10 +1,10 @@
 import { Hero } from '@/components/hero'
 import { Container } from '@/components/container'
 
-export default function Home() {
+export default function blog() {
   return (
     <Container>
-      <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
+      <Hero title="Blog" subtitle="Recent Posts" />
     </Container>
   )
 }
