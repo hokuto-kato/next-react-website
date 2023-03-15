@@ -9,10 +9,18 @@ import {
 } from '@/components/two-column'
 import Image from 'next/image'
 import eyeCatch from '@/images/about.jpg'
+import { Meta } from '@/components/meta'
 
 export default function About() {
   return (
     <Container>
+      <Meta
+        pageTitle="アバウト"
+        pageDesc="About development activities"
+        pageImg={eyeCatch.src}
+        pageImgW={eyeCatch.width}
+        pageImgH={eyeCatch.height}
+      />
       <Hero title="About" subtitle="About development activities" />
       <figure>
         <Image
