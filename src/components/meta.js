@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { siteMeta } from '@/lib/constants'
 import { useRouter } from 'next/router'
-const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
-  siteMeta
 // 汎用OGP画像
 import siteImg from '@/images/ogp.jpg'
+const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
+  siteMeta
 
 export const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle
