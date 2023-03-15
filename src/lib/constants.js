@@ -1,7 +1,7 @@
 export const siteMeta = {
   siteTitle: 'CUBE',
   siteDesc: 'アウトプットしていくサイト',
-  siteUrl: 'http://example.com',
+  siteUrl: 'https://next-react-website-topaz.vercel.app/',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
   siteType: 'website',
